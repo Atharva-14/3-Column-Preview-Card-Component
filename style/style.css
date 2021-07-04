@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+h2 {
+    color: var(--very-light-gray);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 1rem 0;
+}
+
+p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin: 1.5rem 0;
+}
+
+button {
+    background-color: var(--very-light-gray);
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 8px 18px;
+    margin-top: 3rem;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+img {
+    margin: 1rem 0;
+}
+
+.card__start {
+    padding: 2rem;
+    background-color: var(--bright-orange);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.btn__start {
+    color: var(--bright-orange);
+}
+
+.card__middle {
+    padding: 2rem;
+    background-color: var(--dark-cyan);
+}
+
+.btn__middle {
+    color: var(--dark-cyan);
+}
+
+.card__end {
+    padding: 2rem;
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.btn__end {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 1rem;
+        flex: 1;
+    }
+
+    .card__start {
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+
+    .card__end {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 8px;
+    }
+
+}
